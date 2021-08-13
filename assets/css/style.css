@@ -909,19 +909,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 
 
- *{
-  margin: 0;
-  padding: 0;
  
- }
 
- body{
-  font-size: 16px;
-  color: #fff;
-  background-color: #000;
- }
-
- .container {
+  #competitions .container {
   position: relative;
   padding: 20px;
   display: flex;
@@ -933,7 +923,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.container .row{
+#competitions .container .row{
   position: relative;
   margin: 20px;
   overflow: hidden;
@@ -958,7 +948,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.card-header{
+ #competitions .card-header{
   font-size: 22px; 
   height: 100px;
   background: url('../img/las vegas.jpg'),white;
@@ -969,7 +959,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.card-body button{
+ #competitions .card-body button{
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -978,10 +968,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
  }
 /**CARD EFFECTS**/
-.container:hover .card {
+ #competitions .container:hover .card {
   opacity:0.8;
 }
-.container .card:hover {
+ #competitions .container .card:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 10px 10px 10px 0 #FF4500;
   border-radius: 0;
@@ -992,14 +982,14 @@ h1, h2, h3, h4, h5, h6 {
 /**CARD EFFECTS END**/
 /****BUTTON STYLES****/
 
-.btn-one {
+ #competitions .btn-one {
   color: #FFF;
   transition: all 0.3s;
   position: relative;
   transition: all 0.3s;
 }
 
-.btn::before {
+#competitions .btn::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1017,14 +1007,14 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-color: rgba(255,255,255,0.5);
   transform: scale(0.1, 1);
 }
-.btn:hover {
+#competitions .btn:hover {
   letter-spacing: 2px;
 }
-.btn:hover::before {
+#competitions .btn:hover::before {
   opacity: 1; 
   transform: scale(1, 1); 
 }
-.btn::after {
+#competitions .btn::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1035,7 +1025,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s;
   background-color: rgba(255,255,255,0.1);
 }
-.btn:hover::after {
+#competitions .btn:hover::after {
   opacity: 0; 
   transform: scale(0.1, 1);
 }
