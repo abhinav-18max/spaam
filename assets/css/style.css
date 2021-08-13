@@ -1,15 +1,10 @@
-/**
-* Template Name: TheEvent - v4.3.0
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background:black;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
@@ -449,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background:black;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -463,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: black;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1627,4 +1622,59 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+/*--------------countdowm---------------------------------*/
+#hero .countdown {
+  margin-bottom: 80px;
+}
+
+#hero .countdown div {
+  background-color: orange;
+  text-align: center;
+  border: 2px solid orange;
+  border-radius: 8px;
+  margin: 10px 10px;
+  width: 100px;
+  padding: 15px 0;
+}
+
+#hero .countdown div h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color:black;
+}
+
+#hero .countdown div h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color:black;
+}
+
+@media (max-width: 575px) {
+  #hero .countdown div {
+    width: 70px;
+    padding: 10px 0;
+    margin: 10px 8px;
+   
+  }
+  #hero .countdown div h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:black;
+  }
+  #hero .countdown div h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+  }
+}
+/*---------------anim---------*/
+.anim, .anim svg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.anim path {
+  stroke-width: 2;
 }
