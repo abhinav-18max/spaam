@@ -1062,6 +1062,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 40px;
 }
 
+
 #competitions .section-title h2 {
   font-size: 14px;
   font-weight: 500;
@@ -1085,6 +1086,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #competitions .row{
+
   position: relative;
   padding: 20px;
   display: flex;
@@ -1092,7 +1094,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-wrap: wrap;
 }
+
 #competitions .box {
+
   display: grid;
   justify-content: center;
   align-items: center;
@@ -1130,6 +1134,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20x;
 
 
+
 }
 
 #competitions .box:hover {
@@ -1138,12 +1143,16 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
+
 #competitions .box:hover span, #competitions .box:hover h4, #competitions .box:hover p {
   color: #fff;
+
 }
 
 
+
  #competitions .btn {
+
   color: #FFF;
   transition: all 0.3s;
   position: relative;
@@ -1665,4 +1674,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     transform: scale(1.12);
   }
+
 }
+
