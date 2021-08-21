@@ -1151,12 +1151,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
- #competitions .btn {
+#competitions .btn {
 
-  color: #FFF;
+  color: #000;
+  font-weight: bolder;
   transition: all 0.3s;
   position: relative;
   transition: all 0.3s;
+  background-color: wheat;
 
 }
 
