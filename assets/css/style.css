@@ -1011,6 +1011,13 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Cards Section
 --------------------------------------------------------------*/
+#events h1{
+  padding-top: 20px;
+  font-weight: bolder;
+  font-size: 3em;
+  font-style: all;
+}
+
 #competitions .section-title {
   padding-bottom: 40px;
 }
