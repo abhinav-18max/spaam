@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  color: #f82249;
+  color: #fc7404;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #f82249;
+  background: #ff5b0b;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: #ff9505;
   color: #fff;
 }
 
@@ -175,11 +175,11 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .buy-tickets {
   color: #fff;
-  background: #f82249;
+  background: #fc7404;
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
-  border: 2px solid #f82249;
+  border: 2px solid #fc7404;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #f82249;
+  background-color: #fc7404;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #f82249;
+  color: #ff9505;
 }
 
 .navbar .dropdown:hover > ul {
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #f82249;
+  color: #ff9505;
 }
 
 .navbar-mobile .getstarted {
@@ -431,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #f82249;
+  color: #ff9505;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -631,7 +631,54 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  background: url("../img/about-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
 
+@media (min-width: 1024px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+
+#about:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Speakers Section
@@ -1407,7 +1454,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: #fc7404;
   color: #fff;
 }
 
@@ -1418,7 +1465,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid #ff5b0b;
 }
 
 #footer .footer-top .footer-links {
@@ -1433,7 +1480,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: #ff5b0b;
   font-size: 18px;
 }
 
@@ -1451,7 +1498,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: #fc7404;
 }
 
 #footer .footer-top .footer-contact {
@@ -1497,6 +1544,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
   color: #ddd;
 }
+
 /*--------------countdowm---------------------------------*/
 #hero .countdown {
   margin-bottom: 80px;
