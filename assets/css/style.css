@@ -632,52 +632,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# About Section
+# About
 --------------------------------------------------------------*/
-#about {
-  background: url("../img/about-bg.jpg");
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  color: #fff;
-  padding: 60px 0 40px 0;
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
 }
 
-@media (min-width: 1024px) {
-  #about {
-    background-attachment: fixed;
-  }
+.about .content ul {
+  list-style: none;
+  padding: 0;
 }
 
-#about:before {
-  content: "";
-  background: rgba(13, 20, 41, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+.about .content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 35px;
 }
 
-#about h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
+.about .content ul li:first-child {
+  margin-top: 35px;
 }
 
-#about h3 {
+.about .content ul i {
+  background: #fff;
+  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  font-size: 24px;
+  padding: 20px;
+  margin-right: 15px;
+  color: #106eea;
+  border-radius: 50px;
+}
+
+.about .content ul h5 {
   font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #fff;
+  color: #555555;
 }
 
-#about p {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #fff;
+.about .content ul p {
+  font-size: 15px;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1691,28 +1688,45 @@ h1, h2, h3, h4, h5, h6 {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding: 60px 0;
+  padding: 70px 0 60px;
 }
 
 .counts .count-box {
+  padding: 30px 30px 25px 30px;
   width: 100%;
+  position: relative;
   text-align: center;
+  background: #f1f6fe;
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background:white;
+  color: orange;
+  width: 56px;
+  height: 56px;
+  line-height: 0;
+  border-radius: 50px;
+  border: 5px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .counts .count-box span {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 36px;
   display: block;
-  font-weight: 700;
-  color: #124265;
-  margin-left: 80px;
-  margin: auto;
+  font-weight: 600;
+  color: #062b5b;
 }
 
 .counts .count-box p {
-  padding: 8px 0 0 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #1e6ca6;
 }
