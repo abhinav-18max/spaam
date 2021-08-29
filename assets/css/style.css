@@ -1066,12 +1066,15 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Cards Section
 --------------------------------------------------------------*/
+
 #events h1{
   padding-top: 20px;
   font-weight: bolder;
   font-size: 3em;
   font-style: all;
 }
+
+
 
 #competitions .section-title {
   padding-bottom: 40px;
@@ -1110,7 +1113,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-#competitions .box {
+#competitions .box{
 
   display: grid;
   justify-content: center;
@@ -1119,10 +1122,24 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   min-height: 320px;
   padding: 50px 30px;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/gallery/1.jpg')  ;
+  background: #ff5b0b;
+
+}
+#competitions .card-img-top {
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+   border-radius: 20px 20px 0 0;
+
+ 
 
 }
 
@@ -1130,7 +1147,7 @@ h1, h2, h3, h4, h5, h6 {
   
   font-size: 28px;
   font-weight: 700;
-  color: #cda45e;
+  color: #000;
 }
 
 #competitions .box h4 {
@@ -1142,7 +1159,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #competitions .box p {
-  color: #aaaaaa;
+  color: #000;
   font-size: 15px;
   margin: 0;
   padding-bottom: 20px;
@@ -1151,6 +1168,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 }
+
+
 
 #competitions .box:hover {
   background: #fc7404;
@@ -1164,59 +1183,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
-
-#competitions .btn {
-
-  color: #000;
-  font-weight: bolder;
-  transition: all 0.3s;
-  position: relative;
-  transition: all 0.3s;
-  background-color: wheat;
-
-}
-
-#competitions .btn::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.5);
-  transform: scale(0.1, 1);
-}
-#competitions .btn:hover {
-  letter-spacing: 2px;
-}
-#competitions .btn:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
-}
-#competitions .btn::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
-}
-#competitions .btn:hover::after {
-  opacity: 0; 
-  transform: scale(0.1, 1);
-}
 
 
 
