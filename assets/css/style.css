@@ -4,7 +4,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background:white;
+  background-color:black;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   overflow: visible;
   background: #fff url("../img/preloader.svg") no-repeat center center;
+
 }
 
 /*--------------------------------------------------------------
@@ -97,12 +98,13 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: white;
   bottom: 0;
   left: calc(50% - 25px);
 }
 
 .section-header h2 {
+  color:orange;
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
@@ -128,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   height: 90px;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
@@ -460,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero:before {
   content: "";
   background: #000;
-  
+ 
   position: absolute;
   bottom: 0;
   top: 0;
@@ -636,6 +638,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  background-color:#fc7404 ;
+  margin-top: 25px;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -738,12 +744,14 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-#speakers-details {
-  padding: 60px 0;
+#speakers-details .details {
+  font-family: 'Dancing Script', cursive;
+  font-size:24px;
+  
 }
 
 #speakers-details .details h2 {
-  color: #112363;
+  color: white;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -778,14 +786,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #speakers-details .details p {
-  color: #112363;
-  font-size: 15px;
+  color: orange;
+  
   margin-bottom: 10px;
 }
+#speakers-details .details li{
+   color: orange;
+   font-family: Abril Fatface;
+}
+
+
 
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
+
 #shedule .timeline-content{
     color: #F4BB44;
 }
@@ -804,7 +819,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-timeline {
-    position: relative
+    position: relative;
+    display: none;
 }
 
 .main-timeline:before {
@@ -1058,122 +1074,83 @@ h1, h2, h3, h4, h5, h6 {
 # Cards Section
 --------------------------------------------------------------*/
 
-#events h1{
-  padding-top: 20px;
-  font-weight: bolder;
-  font-size: 3em;
-  font-style: all;
+#hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
-
-
-#competitions .section-title {
-  padding-bottom: 40px;
+#hero .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-#competitions .section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
-  
-  padding: 0;
-  margin: 0 0 5px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
-  font-family: "Titillium Web", sans-serif;
+#hero .carousel-item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-#competitions .section-title p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  font-family: "Sigmar One", serif;
-  color: #cda45e;
-}
-
-#competitions .row{
-
-  position: relative;
-  padding: 20px;
+#hero .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  top: 70px;
+  left: 50px;
+  right: 50px;
+}
+#hero .carousel-fade {
+  overflow: hidden;
 }
 
-#competitions .box{
-
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  position: relative;
-  min-height: 320px;
-  padding: 50px 30px;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
-  background: #ff5b0b;
-
-}
-#competitions .card-img-top {
-
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  position: relative;
-  padding: 0;
-  margin: 0;
-   border-radius: 20px 20px 0 0;
-
- 
-
+#hero .carousel-fade .carousel-inner .carousel-item {
+  transition-property: opacity;
 }
 
-#competitions .box span {
-  
-  font-size: 28px;
-  font-weight: 700;
-  color: #000;
+#hero .carousel-fade .carousel-inner .carousel-item,
+#hero .carousel-fade .carousel-inner .active.carousel-item-start,
+#hero .carousel-fade .carousel-inner .active.carousel-item-end {
+  opacity: 0;
 }
 
-#competitions .box h4 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0;
-  margin: 20px 0;
-  color: rgba(255, 255, 255, 0.8);
+#hero .carousel-fade .carousel-inner .active,
+#hero .carousel-fade .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
 }
 
-#competitions .box p {
-  color: #000;
-  font-size: 15px;
-  margin: 0;
-  padding-bottom: 20px;
-  border-radius: 20x;
-
-
-
+#hero .carousel-fade .carousel-inner .carousel-item-next,
+#hero .carousel-fade .carousel-inner .carousel-item-prev,
+#hero .carousel-fade .carousel-inner .active.carousel-item-start,
+#hero .carousel-fade .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
 }
 
-
-
-#competitions .box:hover {
-  background: #fc7404;
-  padding: 30px 30px 70px 30px;
-  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+#hero .carousel-control-prev, #hero .carousel-control-next {
+  width: 10%;
 }
 
-
-#competitions .box:hover span, #competitions .box:hover h4, #competitions .box:hover p {
-  color: #fff;
-
+@media (min-width: 1024px) {
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 5%;
+  }
 }
 
+#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 32px;
+  line-height: 1;
+}
+
+#hero .carousel-indicators li {
+  cursor: pointer;
+}
 
 
 
@@ -1203,7 +1180,7 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
   height: 160px;
 }
 
@@ -1359,6 +1336,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #contact {
   padding: 60px 0;
+  display:none;
 }
 #contact .queries h2{
   padding-top: 20px;
@@ -1514,10 +1492,11 @@ h1, h2, h3, h4, h5, h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  background: black;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
+  align-items: center;
 }
 
 #footer .footer-top {
@@ -1746,8 +1725,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 50%;
-  border: 4px solid #000;
+  
   margin: 0 auto;
 }
 
@@ -1812,6 +1790,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .counts {
   padding: 70px 0 60px;
+  background-color:#fc7404 ;
 }
 
 .counts .count-box {
@@ -1863,7 +1842,7 @@ span {
 
 .outline {
   position: absolute;
-  top: 60px;
+  top: -10px;
 }
 
 .outline {
@@ -1871,79 +1850,229 @@ span {
   -webkit-text-fill-color: transparent;
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: orange;
+  -webkit-text-stroke-color: #fc7404;
   font-size: 100px;
   font-family: "Arvo", serif;
 }
 
 
 
-.loader {
-  width: 250px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: helvetica, arial, sans-serif;
+
+
+/*-----------------------
+  Separate page BAckground
+  ---------------------*/
+  .card{
+    background-color:black;
+    padding: 0%;
+    position: relative;
+    
+  }
+  .card img{
+    border-radius:10%;
+  }
+ .card:hover{
+   filter: grayscale(100%);
+ }
+ .card .profile-name {
+    position: absolute;
+    
+    left: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    color:white;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+ /*-----BAckground------*/
+    .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(60deg, orange 50%,black 50%, black 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    }
+    
+    
+    .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+    }
+    
+    .bg3 {
+    animation-duration:5s;
+    }
+  @keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+/*-----------------------Card-------------*/
+.card1 {
+     position: relative;
+     display: flex;
+     width: 350px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid #d2d2dc;
+     border-radius: 11px;
+     -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+     box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+ }
+
+
+
+/*----Scrollable-------*/
+.events{
+  margin: bottom 10px;
+}
+.events .section-title {
+  padding-bottom: 40px;
+}
+
+
+.events .section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  
+  padding: 0;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 900;
-  color: #ce4233;
-  letter-spacing: 0.2em;
-}
-.loader::before, .loader::after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 15px;
-  background: #ce4233;
-  position: absolute;
-  -webkit-animation: load 0.7s infinite alternate ease-in-out;
-          animation: load 0.7s infinite alternate ease-in-out;
-}
-.loader::before {
-  top: 0;
-}
-.loader::after {
-  bottom: 0;
-}
-
-@-webkit-keyframes load {
-  0% {
-    left: 0;
-    height: 30px;
-    width: 15px;
-  }
-  50% {
-    height: 8px;
-    width: 40px;
-  }
-  100% {
-    left: 235px;
-    height: 30px;
-    width: 15px;
-  }
-}
-
-@keyframes load {
-  0% {
-    left: 0;
-    height: 30px;
-    width: 15px;
-  }
-  50% {
-    height: 8px;
-    width: 40px;
-  }
-  100% {
-    left: 235px;
-    height: 30px;
-    width: 15px;
-  }
+  color: #aaaaaa;
+  font-family: "Titillium Web", sans-serif;
 }
 
 
+.events .section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Sigmar One", serif;
+  color: #cda45e;
+}
 
+.events .scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  padding:0px;
+  
+  overflow-x:scroll;
+  margin:0px;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+
+}
+
+.events .box{
+
+
+  margin-left:50px;
+  width: 300px;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  min-height: 320px;
+  padding: 0px;
+  border-radius:  20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #ff5b0b;
+  text-align: center;
+  font-family: arial;
+
+}
+.events .box img{
+  width:300px;
+  border-radius:20px 20px 0px 0px;
+  
+}
+
+.events .box span {
+  
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+}
+.events .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.events .box p {
+  color: #000;
+  font-size: 15px;
+  margin: 0;
+  padding-bottom: 20px;
+  border-radius: 20x;
+
+
+
+}
+.events .box:hover img {
+  border-radius: 0px;
+}
+
+
+.events .box:hover {
+  background: #fc7404;
+  padding: 30px 30px 30px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+.events .box:hover span,#events .box:hover h4,#events .box:hover p{
+  color: #fff;
+  
+}
+
+
+@media (max-width: 768px) { 
+  .events .box{
+    max-width:200px;
+  }
+.events .box img{
+    max-width:200px;
+  }
+  
+ }
+ .events{
+   overflow: hidden;
+ }
+
+.scroll-container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	
+	background-color: #fc7404;
+}
+ /*-------------no scroll---------------*/
+ 
 
