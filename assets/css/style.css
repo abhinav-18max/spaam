@@ -1973,6 +1973,12 @@ span {
 
 
 /*----Scrollable-------*/
+#main-event{
+  font-size: 3.5rem;
+  color: #fff;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
 .events{
   margin: bottom 10px;
 }
@@ -1997,10 +2003,11 @@ span {
 .events .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
   font-family: "Sigmar One", serif;
-  color: #cda45e;
+  color: #fff;
 }
 
 .events .scroll-container {
@@ -2019,20 +2026,25 @@ span {
 
 }
 
+.events .swiper-wrapper .col-md-6{
+  
+
+}
+
 .events .box{
 
-
+  display: grid;
   margin-left:50px;
-  width: 300px;
+  width: 20rem;
   align-items: center;
   height: 100%;
   position: relative;
   min-height: 320px;
-  padding: 0px;
+  padding: 0;
   border-radius:  20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: #ff5b0b;
+  background: #fc6f2a;
   text-align: center;
   font-family: arial;
 
@@ -2045,43 +2057,48 @@ span {
 
 .events .box span {
   
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #000;
 }
 .events .box h4 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-right: 10px;
   margin: 20px 0;
   color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 
 .events .box p {
   color: #000;
-  font-size: 15px;
+  font-size: 1rem;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   border-radius: 20x;
-
+  font-family: PT Sans , sans-serif;
+  font-weight: bold;
 
 
 }
-.events .box:hover img {
+
+.events .box .last{
+  padding-bottom: 20px;
+}
+/*.events .box:hover img {
   border-radius: 0px;
-}
+}*/
 
 
-.events .box:hover {
-  background: #fc7404;
+/*.events .box:hover {
+  background: #f46722;
 
   padding: 30px 30px 30px 30px;
-
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
-}
+}*/
 
 
-.events .box:hover span,#events .box:hover h4,#events .box:hover p{
+.events .box:hover span,.events .box:hover h4,.events .box:hover p{
   color: #fff;
 
   
@@ -2090,7 +2107,7 @@ span {
 
 @media (max-width: 768px) { 
   .events .box{
-    max-width:200px;
+    max-width:20rem;
   }
 .events .box img{
     max-width:200px;
@@ -2104,6 +2121,7 @@ span {
 @media (max-width: 768px) { 
   .events .box{
     max-width:200px;
+
   }
 .events .box img{
     max-width:200px;
@@ -2115,17 +2133,22 @@ span {
  }
 
 
-.scroll-container::-webkit-scrollbar
-{
-	width: 12px;
-	background-color:transparent;
+.events .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
 }
 
-.scroll-container::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	
-	background-color: #fc7404;
+.events.events.events.events.events.events .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #F4BB44;
+ 
+  border: 1px solid #F4BB44;
+}
+
+.events.events.events.events.events .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #CC7722;
+}
 }
  /*-------------no scroll---------------*/
  
