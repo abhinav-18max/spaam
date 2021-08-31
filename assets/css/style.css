@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   overflow: visible;
   background: #fff url("../img/preloader.svg") no-repeat center center;
+
 }
 
 /*--------------------------------------------------------------
@@ -460,8 +461,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background:transparent;
-  
+  background: #000;
+ 
   position: absolute;
   bottom: 0;
   top: 0;
@@ -708,6 +709,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+
 #speakers .speaker .details h3 {
   color: #fff;
   font-size: 22px;
@@ -744,11 +746,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #speakers-details .details {
-  font-family: 'Dancing Script', cursive;
-  font-size:24px;
+
+  font-family: 'Signika', sans-serif;
+  font-size:22px;
   
 }
+#speakers-details .details{
+  padding-bottom: 30px;
 
+}
 #speakers-details .details h2 {
   color: white;
   font-size: 28px;
@@ -790,8 +796,38 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 #speakers-details .details li{
-   color: orange;
-   font-family: Abril Fatface;
+
+   color: #fc7404;
+   font-family: 'Dancing Script', cursive;
+   padding-right: 15px;
+   font-weight: bolder;
+}
+#speakers-details .details ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+#speakers-details #guide{
+  padding-top: 20px;
+}
+#speakers-details{
+  padding-top: 50px;
+}
+#speakers-details .container .row .drag-top{
+
+  position: relative;
+  font-size: 1.1em;
+  text-align: left;
+  margin-top: -15px;
+  margin-right: -15px;
+  background: black;
+  opacity: 0.8;
+  
+}
+#speakers-details .container .row .drag-top span{
+  color: #fff;
+
 }
 
 
@@ -1361,7 +1397,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #112363;
 }
 
-} 
+
 #contact .contact-info h3 {
   font-size: 18px;
   margin-bottom: 15px;
@@ -1842,7 +1878,7 @@ span {
 
 .outline {
   position: absolute;
-  top: 60px;
+  top: -10px;
 }
 
 .outline {
@@ -1888,8 +1924,9 @@ span {
  /*-----BAckground------*/
     .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(60deg, black 50%,orange 50%);
-    color:-30%;
+
+    background-image: linear-gradient(60deg, orange 50%,black 50%, black 50%);
+
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -2047,6 +2084,7 @@ span {
 .events .box:hover span,#events .box:hover h4,#events .box:hover p{
   color: #fff;
 
+  
 }
 
 
@@ -2063,6 +2101,20 @@ span {
    overflow: hidden;
  }
 
+@media (max-width: 768px) { 
+  .events .box{
+    max-width:200px;
+  }
+.events .box img{
+    max-width:200px;
+  }
+  
+ }
+ .events{
+   overflow: hidden;
+ }
+
+
 .scroll-container::-webkit-scrollbar
 {
 	width: 12px;
@@ -2077,3 +2129,4 @@ span {
 }
  /*-------------no scroll---------------*/
  
+
