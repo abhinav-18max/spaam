@@ -1858,7 +1858,7 @@ span {
     .bg {
     animation:slide 3s ease-in-out infinite alternate;
 
-    background-image: linear-gradient(60deg, orange 50%,black 50%);
+    background-image: linear-gradient(60deg,#fc6f2a 50%,black 50%);
 
     bottom:0;
     left:-50%;
@@ -2039,4 +2039,24 @@ span {
 
 
  /*--------Leaderboard----------*/
- 
+ .leaderboard .box{
+   margin-left: 25%;
+  width: 300px;
+  align-items: center;
+  height: 100%;
+  position: center;
+  height: 300px;
+  border-radius:150px 150px 0px 0px;
+
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  
+  background: #fc702c;
+  text-align: center;
+  font-family: arial;
+  padding-bottom:40px;
+ }
+ .leaderboard  .box img{
+  
+  width:300px;
+  
+ }
