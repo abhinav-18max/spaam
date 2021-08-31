@@ -746,12 +746,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #speakers-details .details {
+
   font-family: 'Signika', sans-serif;
   font-size:22px;
   
 }
 #speakers-details .details{
   padding-bottom: 30px;
+
 }
 #speakers-details .details h2 {
   color: white;
@@ -794,6 +796,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 #speakers-details .details li{
+
    color: #fc7404;
    font-family: 'Dancing Script', cursive;
    padding-right: 15px;
@@ -824,6 +827,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #speakers-details .container .row .drag-top span{
   color: #fff;
+
 }
 
 
@@ -1919,7 +1923,9 @@ span {
  /*-----BAckground------*/
     .bg {
     animation:slide 3s ease-in-out infinite alternate;
+
     background-image: linear-gradient(60deg, orange 50%,black 50%, black 50%);
+
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -2068,13 +2074,16 @@ span {
 
 .events .box:hover {
   background: #fc7404;
+
   padding: 30px 30px 30px 30px;
+
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
 
 .events .box:hover span,#events .box:hover h4,#events .box:hover p{
   color: #fff;
+
   
 }
 
@@ -2091,6 +2100,20 @@ span {
  .events{
    overflow: hidden;
  }
+
+@media (max-width: 768px) { 
+  .events .box{
+    max-width:200px;
+  }
+.events .box img{
+    max-width:200px;
+  }
+  
+ }
+ .events{
+   overflow: hidden;
+ }
+
 
 .scroll-container::-webkit-scrollbar
 {
