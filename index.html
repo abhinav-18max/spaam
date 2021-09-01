@@ -223,7 +223,10 @@
           </div>
         </div>
       </div>
-    <button type="button" class="btn btn-primary btn-lg button">Large button</button>
+      <div class="mb-4 pb-0">
+        <button type="button" class="btn btn-primary btn-lg button">Large button</button>
+      </div>
+    
     </div>
   </section><!-- End Hero Section -->
 
@@ -547,8 +550,7 @@
     <div class=" text-center section-title">
         
       <div id="main-event" class="text-center title container">WEBINARS</div>
-        <a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a> 
-        <a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a>
+        
       
     </div>
     <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
@@ -661,8 +663,28 @@
       <div id="main-event" class="text-center title container">COMPETITIONS</div>
       <div class="row">
         <div class="col-lg-12 col-md-12">
-          <button type="button" class="btn btn-primary btn-lg button">Large button</button>
-          <button type="button" class="btn btn-secondary btn-lg  button" >Large button</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            REGISTER
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Register</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-footer">
+              
+                  <button type="button" class="btn btn-primary">IEEE Members</button>
+                  <button type="button" class="btn btn-primary">NON IEEE</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -990,59 +1012,20 @@
   
   <!-- leader board-->
   <!-- leader board-->
-  <section class="leaderboard">
-    <div class=" text-center section-title">
-      <h1>Mighty SPAAMMER Leaderboard</h1>
-  
-    </div>
+  <section class="events leader">
+    <header class="section-header">
+      <h2 class="led">MIGHTY SPAMMER</h2>
+      <p></p>
+    </header>
     <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
       <div class="swiper-wrapper">
   
   
+        
         <div class="swiper-slide">
           <div class="box">
   
-            <img class="round" src="/assets/img/gallery/S1.jpg"><br>
-            <span>01</span>
-            <h4>NAME</h4>
-            <p class="last">College</p>
-  
-          </div>
-        </div><!-- End testimonial item -->
-        <div class="swiper-slide">
-          <div class="box">
-  
-            <img class="round" src="/assets/img/gallery/3.jpg"><br>
-            <span>02</span>
-            <h4>NAME</h4>
-            <p class="last">College</p>
-  
-          </div>
-        </div><!-- End testimonial item -->
-        <div class="swiper-slide">
-          <div class="box">
-  
-            <img class="round" src="/assets/img/gallery/3.jpg"><br>
-            <span>03</span>
-            <h4>NAME</h4>
-            <p class="last">College</p>
-  
-          </div>
-        </div><!-- End testimonial item -->
-        <div class="swiper-slide">
-          <div class="box">
-  
-            <img class="round" src="/assets/img/gallery/3.jpg"><br>
-            <span>04</span>
-            <h4>NAME</h4>
-            <p class="last">College</p>
-  
-          </div>
-        </div><!-- End testimonial item -->
-        <div class="swiper-slide">
-          <div class="box">
-  
-            <img class="round" src="/assets/img/gallery/3.jpg"><br>
+            <img  src="./assets/img/gallery/3.jpg"><br>
             <span>05</span>
             <h4>NAME</h4>
             <p class="last">College</p>
@@ -1054,7 +1037,7 @@
   
   
       </div>
-      <div class="swiper-pagination"></div>
+      
     </div>
   </section>
   
@@ -1135,10 +1118,10 @@
             </p>
 
            <div class="social-links">
-              <a href="https://twitter.com/MaceSb" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/ieeemace/" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/ieee_mace_sb/" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/ieee-student-branch-mace/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/MaceSb" class="twitter" target=" "><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/ieeemace/" class="facebook" target=" "><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ieee_mace_sb/" class="instagram" target=" "><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/ieee-student-branch-mace/" class="linkedin" target=" "><i class="bi bi-linkedin"></i></a>
             </div>
 
           </div>
@@ -1167,7 +1150,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   
