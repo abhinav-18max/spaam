@@ -38,49 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 70px;
 }
 
-/* Prelaoder */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #2eca6a;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -160,7 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   height: 90px;
-  position: absolute;
+  position: fixed;
+  background-color: black;
   left: 0;
   top: 0;
   right: 0;
@@ -169,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner {
-  background: rgba(6, 12, 34, 0.98);
+  background-color: black;
   height: 70px;
 }
 
@@ -191,9 +150,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo img {
+  float: left;
   padding: 0;
   margin: 0;
   max-height: 40px;
+ 
+  background-color: white;
+  background-size: cover;
 }
 
 @media (max-width: 992px) {
@@ -242,6 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  
 }
 
 .navbar ul {
@@ -473,20 +437,29 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.color-b{
+    color: #fc7404;
+}
 #hero {
-  width: 100%;
+ width: 100%;
   height: 100vh;
-  background:transparent;
-  
+  background:black;
   background-size: cover;
   overflow: hidden;
   position: relative;
+}
 }
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
+    
+}
+@media (max-width: 576px){
+    #hero .kl{
+        font-size: 1rem;
+    }
 }
 
 #hero:before {
@@ -512,17 +485,28 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 991px) {
   #hero .hero-container {
     top: 70px;
   }
+    #hero .kl .letters{
+        font-size: 5rem;
+    }
+}
+#hero .kl {
+    position: relative;
+  font-weight: 900;
+  font-size: 15em;
+  padding-bottom: 10px;
+  color: #fff;
 }
 
 #hero h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
@@ -536,6 +520,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     font-size: 34px;
   }
+    #hero .kl .letters{
+        font-size: 11rem;
+    }
 }
 
 #hero p {
@@ -664,13 +651,17 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
   }
 }
-
+@media (max-width: 480px){
+    #hero .kl .letters{
+        font-size: 5rem;
+    }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about{
- background-color: #fc6f2a;
-  
+ background-color:transparent;
+  color:white;
   margin-top: 25px;
 }
 .about .content h3 {
@@ -790,12 +781,21 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #speakers-details .details h2 {
-  color: white;
-  font-size: 28px;
+  color: #fc7404;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-
+#speakers-details .details h1{
+    padding-top: 40px;
+    font-weight: 700;
+    color: #fc7404;
+}
+.btw{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
 #speakers-details .details .social {
   margin-bottom: 15px;
 }
@@ -825,16 +825,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #speakers-details .details p {
-  color: orange;
-  
+  color:#DAA06D ;  
   margin-bottom: 10px;
+    padding-left: 10px;
 }
 #speakers-details .details li{
 
-   color: #fc7404;
-   font-family: 'Dancing Script', cursive;
-   padding-right: 15px;
-   font-weight: bolder;
+   color: #fff;
+   font-family:'helvetica', "san-serif";
+   padding-right: 20px;
+   font-weight: 400;
 }
 #speakers-details .details ul{
   text-decoration: none;
@@ -863,7 +863,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 
 }
-
 
 
 /*--------------------------------------------------------------
@@ -1236,12 +1235,15 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
-  background-color:white;
+  background-color:black;
 }
 #supporters img{
+  background-color: white;
+  background-size: cover;
   width:300px;
   height:100px;
 }
+
 
 /*--------------------------------------------------------------
 # F.A.Q Section
@@ -1543,7 +1545,7 @@ h1, h2, h3, h4, h5, h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #ffe259;  /* fallback for old browsers */
+  background: orange;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 0 0 25px 0;
@@ -1553,7 +1555,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .footer-top {
-  background: #ffe259;  /* fallback for old browsers */
+  background: orange;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 60px 0 30px 0;
@@ -1796,7 +1798,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #062b5b;
+  color: black;
 }
 
 .counts .count-box p {
@@ -1912,7 +1914,7 @@ span {
 
 /*----Scrollable-------*/
 #main-event{
-  font-size: 3.5rem;
+  font-size: 8vw;
   color: #fff;
   padding-bottom: 20px;
   font-weight: bolder;
@@ -1951,19 +1953,17 @@ span {
 
 }
 
-
-
-
-.events .swiper-wrapper .col-md-6{
-  
-
+.swiper-container{
+  margin-right:0% ;
 }
 
-.events .box{
 
+
+.events .box{
+  margin: auto;
   display: grid;
-  margin-left:50px;
-  width: 20rem;
+  margin-bottom: 20px;
+  width: 300px;
 
   align-items: center;
   height: 100%;
@@ -1981,7 +1981,7 @@ span {
 
 }
 .events .box img{
-  width:20rem;
+  width:300px;
   border-radius:20px 20px 0px 0px;
   
 }
@@ -2038,7 +2038,7 @@ span {
 
 @media (max-width: 768px) { 
   .events .box{
-    max-width:20rem;
+    max-width:200px;
   }
 .events .box img{
     max-width:200px;
@@ -2067,6 +2067,7 @@ span {
 .events .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  color:#F4BB44 ;
 }
 
 .events.events.events.events.events.events .swiper-pagination .swiper-pagination-bullet {
@@ -2081,79 +2082,13 @@ span {
 .events.events.events.events.events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #CC7722;
 }
-}
  /*-------------no scroll---------------*/
 
  
-  border: 1px solid #F4BB44;
-}
-
+ 
 .events.events.events.events.events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #CC7722;
 }
 
-
-
-
- /*--------Leaderboard----------*/
- .leaderboard{
-  padding: 40px;
- }
- .leaderboard h1{
-
-  color: #fff;
-  padding-bottom: 20px;
-  font-weight: bolder;
- }
- .leaderboard .box{
-   margin-left: 25%;
-  width: 15rem;
-  align-items: center;
-  height: 70%;
-  position: center;
-  border-radius:20px 20px 20px 20px;
-
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  
-  background: #fc702c;
-  text-align: center;
-  font-family: arial;
-  
- }
- .leaderboard  .box .round{
-  padding: 20px;
-  width:15rem;
-  border-radius: 25%;
-  
- }
+ /*------------leaderboard---*/
  
- .leaderboard .box span {
-  
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000;
-}
-.leaderboard .box h4 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  padding-right: 10px;
-  margin: 20px 0;
-  color: rgba(255, 255, 255, 0.8);
-  color: #fff;
-}
-
-.leaderboard .box p {
-  color: #000;
-  font-size: 1rem;
-  margin: 0;
-  padding-bottom: 5px;
-  border-radius: 20x;
-  font-family: PT Sans , sans-serif;
-  font-weight: bold;
-
-
-}
-.leaderboard .box .last{
-  padding-bottom: 20px;
-
- }
