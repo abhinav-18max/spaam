@@ -118,7 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   height: 90px;
-  position: absolute;
+  position: fixed;
+  background-color: black;
   left: 0;
   top: 0;
   right: 0;
@@ -127,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner {
-  background: rgba(6, 12, 34, 0.98);
+  background-color: black;
   height: 70px;
 }
 
@@ -200,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  
 }
 
 .navbar ul {
@@ -2077,15 +2079,64 @@ span {
 }
 
  /*--------Leaderboard----------*/
-.leader img{
-  border-radius: 50%;
+.leaderboard{
+  padding: 40px;
+ }
+ .leaderboard h1{
+
+  color: #fff;
+  padding-bottom: 20px;
+  font-weight: bolder;
+ }
+ .leaderboard .box{
+   margin-left: 25%;
+  width: 15rem;
+  align-items: center;
+  height: 70%;
+  position: center;
+  border-radius:20px 20px 20px 20px;
+
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  
+  background: #fc702c;
+  text-align: center;
+  font-family: arial;
+  
+ }
+ .leaderboard  .box .round{
+  padding: 20px;
+  width:15rem;
+  border-radius: 25%;
+  
+ }
+ 
+ .leaderboard .box span {
+  
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+}
+.leaderboard .box h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-right: 10px;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+}
+
+.leaderboard .box p {
+  color: #000;
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: 5px;
+  border-radius: 20x;
+  font-family: PT Sans , sans-serif;
+  font-weight: bold;
 
 
 }
-.button{
-  padding-bottom: 60px;
-}
+.leaderboard .box .last{
+  padding-bottom: 20px;
 
-#competitions button {
- color:orange;
-}
+ }
