@@ -2084,11 +2084,6 @@ span {
 
  /*------------leaderboard---*/
  
-.btn, .btn-primary, .btn-lg, .button{
-  background-color: orange;
-
+.events a{
+  
 }
-
- .battan{
-   color:blue;
- }
