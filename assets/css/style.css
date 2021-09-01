@@ -781,12 +781,21 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #speakers-details .details h2 {
-  color: white;
-  font-size: 28px;
+  color: #fc7404;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-
+#speakers-details .details h1{
+    padding-top: 40px;
+    font-weight: 700;
+    color: #fc7404;
+}
+.btw{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
 #speakers-details .details .social {
   margin-bottom: 15px;
 }
@@ -816,16 +825,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #speakers-details .details p {
-  color: orange;
-  
+  color:#DAA06D ;  
   margin-bottom: 10px;
+    padding-left: 10px;
 }
 #speakers-details .details li{
 
-   color: #fc7404;
-   font-family: 'Dancing Script', cursive;
-   padding-right: 15px;
-   font-weight: bolder;
+   color: #fff;
+   font-family:'helvetica', "san-serif";
+   padding-right: 20px;
+   font-weight: 400;
 }
 #speakers-details .details ul{
   text-decoration: none;
@@ -854,7 +863,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 
 }
-
 
 
 /*--------------------------------------------------------------
