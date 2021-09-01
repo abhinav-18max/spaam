@@ -1939,7 +1939,7 @@ span {
 
 }
 .events .box img{
-  width: 20rem;
+  width:20rem;
   border-radius:20px 20px 0px 0px;
   
 }
@@ -2084,7 +2084,6 @@ span {
  
  .leaderboard .box span {
   
-
   font-size: 2rem;
   font-weight: 700;
   color: #000;
@@ -2111,6 +2110,5 @@ span {
 }
 .leaderboard .box .last{
   padding-bottom: 20px;
-
 
  }
