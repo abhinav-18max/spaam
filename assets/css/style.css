@@ -442,6 +442,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   overflow: hidden;
   position: relative;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -1896,7 +1897,7 @@ span {
 
 /*----Scrollable-------*/
 #main-event{
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #fff;
   padding-bottom: 20px;
   font-weight: bolder;
@@ -1935,14 +1936,16 @@ span {
 
 }
 
-
+.swiper-container{
+  margin-right:0% ;
+}
 
 
 
 .events .box{
-
+  margin-left: 25%;
   display: grid;
-  margin-left:50px;
+  
   width: 300px;
 
   align-items: center;
@@ -2081,8 +2084,8 @@ span {
   font-weight: bolder;
  }
  .leaderboard .box{
-   margin-left: 25%;
-  width: 15rem;
+  margin-left: 25%;
+  width: 100PX;
   align-items: center;
   height: 70%;
   position: center;
@@ -2132,6 +2135,6 @@ span {
   padding-bottom: 20px;
 
  }
-.events .buy-tickets{
-  padding:20px;
+.button{
+  padding-bottom: 60px;
 }
