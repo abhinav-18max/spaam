@@ -431,6 +431,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.color-b{
+    color: #fc7404;
+}
 #hero {
   width: 100%;
   height: 100vh;
@@ -445,6 +448,12 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+    
+}
+@media (max-width: 576px){
+    #hero .kl{
+        font-size: 1rem;
+    }
 }
 
 #hero:before {
@@ -476,11 +485,21 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-container {
     top: 70px;
   }
+    #hero .kl .letters{
+        font-size: 5rem;
+    }
+}
+#hero .kl {
+    position: relative;
+  font-weight: 900;
+  font-size: 15em;
+  padding-bottom: 10px;
+  color: #fff;
 }
 
 #hero h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
@@ -494,6 +513,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     font-size: 34px;
   }
+    #hero .kl .letters{
+        font-size: 11rem;
+    }
 }
 
 #hero p {
@@ -622,7 +644,11 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
   }
 }
-
+@media (max-width: 480px){
+    #hero .kl .letters{
+        font-size: 5rem;
+    }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1912,16 +1938,12 @@ span {
 
 
 
-.events .swiper-wrapper .col-md-6{
-  
-
-}
 
 .events .box{
 
   display: grid;
   margin-left:50px;
-  width: 20rem;
+  width: 300px;
 
   align-items: center;
   height: 100%;
@@ -1939,7 +1961,7 @@ span {
 
 }
 .events .box img{
-  width:20rem;
+  width:300px;
   border-radius:20px 20px 0px 0px;
   
 }
@@ -1996,7 +2018,7 @@ span {
 
 @media (max-width: 768px) { 
   .events .box{
-    max-width:20rem;
+    max-width:200px;
   }
 .events .box img{
     max-width:200px;
@@ -2025,6 +2047,7 @@ span {
 .events .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  color:#F4BB44 ;
 }
 
 .events.events.events.events.events.events .swiper-pagination .swiper-pagination-bullet {
@@ -2039,13 +2062,10 @@ span {
 .events.events.events.events.events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #CC7722;
 }
-}
  /*-------------no scroll---------------*/
 
  
-  border: 1px solid #F4BB44;
-}
-
+ 
 .events.events.events.events.events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #CC7722;
 }
@@ -2112,3 +2132,6 @@ span {
   padding-bottom: 20px;
 
  }
+.events .buy-tickets{
+  padding:20px;
+}
