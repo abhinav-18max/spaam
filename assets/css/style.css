@@ -16,7 +16,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #f8234a;
+  color: #ff5b0b;
   outline: none;
   text-decoration: none;
 }
@@ -1543,15 +1543,19 @@ h1, h2, h3, h4, h5, h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #ffe259;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 0 0 25px 0;
   color: #eee;
-  font-size: 14px;
+  font-size: 1rem;
   align-items: center;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background: #ffe259;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 60px 0 30px 0;
 }
 
@@ -1907,6 +1911,12 @@ span {
 
 
 /*----Scrollable-------*/
+#main-event{
+  font-size: 3.5rem;
+  color: #fff;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
 .events{
   margin: bottom 10px;
 }
@@ -1932,26 +1942,40 @@ span {
 .events .section-title h1 {
   margin: 0;
   margin: 0;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
   font-family: "Sigmar One", serif;
-  color: white;
+
+  color: #fff;
+
 }
 
 
 
+
+.events .swiper-wrapper .col-md-6{
+  
+
+}
+
 .events .box{
-  margin-left: 25%;
-  width: 300px;
+
+  display: grid;
+  margin-left:50px;
+  width: 20rem;
+
   align-items: center;
   height: 100%;
   position: center;
   min-height: 320px;
-  
+
+  padding: 0;
   border-radius:  20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  
-  background: #fc702c;
+  transition: all ease-in-out 0.3s;
+  background: #fc6f2a;
+
   text-align: center;
   font-family: arial;
 
@@ -1964,36 +1988,57 @@ span {
 
 .events .box span {
   
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #000;
 }
 .events .box h4 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-right: 10px;
   margin: 20px 0;
   color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 
 .events .box p {
   color: #000;
-  font-size: 15px;
+  font-size: 1rem;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   border-radius: 20x;
-
+  font-family: PT Sans , sans-serif;
+  font-weight: bold;
 
 
 }
 
+.events .box .last{
+  padding-bottom: 20px;
+}
+
+/*.events .box:hover img {
+  border-radius: 0px;
+}*/
+
+
+/*.events .box:hover {
+  background: #f46722;
+
+  padding: 30px 30px 30px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}*/
+
+
+.events .box:hover span,.events .box:hover h4,.events .box:hover p{
+  color: #fff;
 
 
 
 
 @media (max-width: 768px) { 
   .events .box{
-    max-width:200px;
+    max-width:20rem;
   }
 .events .box img{
     max-width:200px;
@@ -2007,6 +2052,7 @@ span {
 @media (max-width: 768px) { 
   .events .box{
     max-width:200px;
+
   }
 .events .box img{
     max-width:200px;
@@ -2027,6 +2073,17 @@ span {
   width: 12px;
   height: 12px;
   background-color: #F4BB44;
+
+ 
+  border: 1px solid #F4BB44;
+}
+
+.events.events.events.events.events .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #CC7722;
+}
+}
+ /*-------------no scroll---------------*/
+
  
   border: 1px solid #F4BB44;
 }
