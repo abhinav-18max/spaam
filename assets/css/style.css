@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   color:#fc7404;
   background:white; ;
   padding: 7px 22px;
-  margin: 0 0 30px 15px;
+  margin: 0 0 100px 15px;
   border-radius: 50px;
   border: 2px solid white;
   transition: all ease-in-out 0.3s;
@@ -209,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-size: 13px;
   white-space: nowrap;
+  margin-top: 2vw;
 }
 
  .events .buy-tickets:hover {
@@ -1268,7 +1269,7 @@ h1, h2, h3, h4, h5, h6 {
 #supporters img{
 
   width:300px;
-  height:100px;
+  height:300px;
 }
 
 
@@ -1946,10 +1947,11 @@ span {
   color: #fff;
   padding-bottom: 20px;
   font-weight: bolder;
-  margin-top: 5vw !important;
+  margin-top: 5vm;
+  
 }
 .events{
-  margin: bottom 10px;
+  margin-bottom: 10px;
 }
 .events .section-title {
   
@@ -1991,7 +1993,7 @@ span {
 .events .box{
   margin: auto;
   display: grid;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   width: 300px;
 
   align-items: center;
@@ -2051,16 +2053,19 @@ span {
 }*/
 
 
-/*.events .box:hover {
-  background: #f46722;
-
-  padding: 30px 30px 30px 30px;
-  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
-}*/
 
 
-/*.events .box:hover span,.events .box:hover h4,.events .box:hover p{
-  color: #fff;*/
+
+.events .box:hover{
+  background-color: #fc6f2a;
+  color:white;
+}
+.events .box:hover > span{
+  color:white;
+}
+.events a:hover{
+  background-color:white;
+}
 
 
 
@@ -2119,5 +2124,6 @@ span {
   background-color: #CC7722;
 }
 
- /*------------leaderboard---*/
+/*--------hovering-----------*/
+
  
