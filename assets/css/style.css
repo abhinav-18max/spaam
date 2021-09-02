@@ -196,7 +196,37 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 15px 0 0;
   }
 }
+/*--------------------------------------------------------------
+# Buttons-- register
+--------------------------------------------------------------*/
+.events .buy-tickets {
+  color:#fc7404;
+  background:white; ;
+  padding: 7px 22px;
+  margin: 0 0 30px 15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 13px;
+  white-space: nowrap;
+}
 
+ .events .buy-tickets:hover {
+  background: none;
+  color: orange;
+}
+
+ .events .buy-tickets:focus {
+  color: orange;
+}
+
+@media (max-width: 992px) {
+  .events .buy-tickets {
+    margin: 0 15px 0 0;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1384,6 +1414,7 @@ h1, h2, h3, h4, h5, h6 {
 #buy-tickets #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
 }
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1918,6 +1949,7 @@ span {
   color: #fff;
   padding-bottom: 20px;
   font-weight: bolder;
+  margin-top: 5vw !important;
 }
 .events{
   margin: bottom 10px;
