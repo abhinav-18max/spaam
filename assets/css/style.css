@@ -2147,7 +2147,7 @@ span {
 #leaderboard  .card:hover{
   transform: translateY(-15px);
 }
-#leaderboard .cards .card .content{
+#leaderboard  .card .content{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2156,7 +2156,7 @@ span {
   text-align: center;
 }
 #leaderboard  .card .content .img{
-  margin-left: 25%;
+ 
   height: 100px;
   width: 100px;
   border-radius: 50%;
