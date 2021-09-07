@@ -1736,9 +1736,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .countdown div {
-  background-color: orange;
+  background-color: #ff9100;
   text-align: center;
-  border: 2px solid orange;
+  border: 2px solid #ff9100;
   border-radius: 8px;
   margin: 10px 10px;
   width: 100px;
